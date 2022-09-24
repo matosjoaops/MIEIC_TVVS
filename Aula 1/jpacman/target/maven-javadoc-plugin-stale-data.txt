@@ -1,0 +1,89 @@
+@options
+@packages
+-classpath
+'/home/mechjm/.m2/repository/com/google/guava/guava/24.1-jre/guava-24.1-jre.jar:/home/mechjm/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/mechjm/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/mechjm/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/mechjm/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/mechjm/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/mechjm/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.1.1/junit-jupiter-api-5.1.1.jar:/home/mechjm/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/mechjm/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/home/mechjm/.m2/repository/org/junit/platform/junit-platform-commons/1.1.1/junit-platform-commons-1.1.1.jar:/home/mechjm/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.1.1/junit-jupiter-engine-5.1.1.jar:/home/mechjm/.m2/repository/org/junit/platform/junit-platform-engine/1.1.1/junit-platform-engine-1.1.1.jar:/home/mechjm/.m2/repository/org/junit/vintage/junit-vintage-engine/5.1.1/junit-vintage-engine-5.1.1.jar:/home/mechjm/.m2/repository/org/junit/platform/junit-platform-runner/1.1.1/junit-platform-runner-1.1.1.jar:/home/mechjm/.m2/repository/org/junit/platform/junit-platform-suite-api/1.1.1/junit-platform-suite-api-1.1.1.jar:/home/mechjm/.m2/repository/org/junit/platform/junit-platform-launcher/1.1.1/junit-platform-launcher-1.1.1.jar:/home/mechjm/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.1.1/junit-jupiter-params-5.1.1.jar:/home/mechjm/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/mechjm/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/mechjm/.m2/repository/org/mockito/mockito-core/2.18.0/mockito-core-2.18.0.jar:/home/mechjm/.m2/repository/net/bytebuddy/byte-buddy/1.8.3/byte-buddy-1.8.3.jar:/home/mechjm/.m2/repository/net/bytebuddy/byte-buddy-agent/1.8.3/byte-buddy-agent-1.8.3.jar:/home/mechjm/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/home/mechjm/.m2/repository/org/assertj/assertj-core/3.9.1/assertj-core-3.9.1.jar:/home/mechjm/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/home/mechjm/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/home/mechjm/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/home/mechjm/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar:/home/mechjm/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/home/mechjm/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/main/java:/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2022 <a href="http://www.tudelft.nl">Delft University of Technology</a>. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'jpacman-framework 8.1.1 API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'jpacman-framework 8.1.1 API'
+nl.tudelft.jpacman.board
+nl.tudelft.jpacman.npc
+nl.tudelft.jpacman.npc.ghost
+nl.tudelft.jpacman
+nl.tudelft.jpacman.game
+nl.tudelft.jpacman.sprite
+nl.tudelft.jpacman.level
+nl.tudelft.jpacman.ui
+/home/mechjm/.m2/repository/com/google/guava/guava/24.1-jre/guava-24.1-jre.jar = 1663931781375
+/home/mechjm/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar = 1663931781087
+/home/mechjm/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar = 1663931781087
+/home/mechjm/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar = 1663931781047
+/home/mechjm/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar = 1663931781067
+/home/mechjm/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar = 1663931781199
+/home/mechjm/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.1.1/junit-jupiter-api-5.1.1.jar = 1663931781907
+/home/mechjm/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar = 1663931781843
+/home/mechjm/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar = 1663931781519
+/home/mechjm/.m2/repository/org/junit/platform/junit-platform-commons/1.1.1/junit-platform-commons-1.1.1.jar = 1663931781791
+/home/mechjm/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.1.1/junit-jupiter-engine-5.1.1.jar = 1663931781463
+/home/mechjm/.m2/repository/org/junit/platform/junit-platform-engine/1.1.1/junit-platform-engine-1.1.1.jar = 1663931781847
+/home/mechjm/.m2/repository/org/junit/vintage/junit-vintage-engine/5.1.1/junit-vintage-engine-5.1.1.jar = 1663931781587
+/home/mechjm/.m2/repository/org/junit/platform/junit-platform-runner/1.1.1/junit-platform-runner-1.1.1.jar = 1663931781643
+/home/mechjm/.m2/repository/org/junit/platform/junit-platform-suite-api/1.1.1/junit-platform-suite-api-1.1.1.jar = 1663931781715
+/home/mechjm/.m2/repository/org/junit/platform/junit-platform-launcher/1.1.1/junit-platform-launcher-1.1.1.jar = 1663931781791
+/home/mechjm/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.1.1/junit-jupiter-params-5.1.1.jar = 1663931782107
+/home/mechjm/.m2/repository/junit/junit/4.12/junit-4.12.jar = 1663931783131
+/home/mechjm/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar = 1663931781939
+/home/mechjm/.m2/repository/org/mockito/mockito-core/2.18.0/mockito-core-2.18.0.jar = 1663931782159
+/home/mechjm/.m2/repository/net/bytebuddy/byte-buddy/1.8.3/byte-buddy-1.8.3.jar = 1663931783399
+/home/mechjm/.m2/repository/net/bytebuddy/byte-buddy-agent/1.8.3/byte-buddy-agent-1.8.3.jar = 1663931782103
+/home/mechjm/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar = 1663931782175
+/home/mechjm/.m2/repository/org/assertj/assertj-core/3.9.1/assertj-core-3.9.1.jar = 1663931784007
+/home/mechjm/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar = 1663931782291
+/home/mechjm/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar = 1663931783259
+/home/mechjm/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar = 1663931782243
+/home/mechjm/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar = 1663931782815
+/home/mechjm/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar = 1663931782915
+/home/mechjm/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar = 1663931782983
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/main/java = 1663901298000
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/generated-sources/annotations = 1663932370397
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/type-search-index.zip = 1663933137552
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/allclasses.html = 1663933137564
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/element-list = 1663933137388
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/index-all.html = 1663933137552
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/allpackages-index.html = 1663933137560
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/deprecated-list.html = 1663933137564
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/constant-values.html = 1663933137416
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/package-search-index.zip = 1663933137552
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/search.js = 1663933137572
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/member-search-index.zip = 1663933137552
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/overview-summary.html = 1663933137568
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/stylesheet.css = 1663933137572
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/type-search-index.js = 1663933137552
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/help-doc.html = 1663933137572
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/allclasses-index.html = 1663933137560
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/script.js = 1663933137572
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/overview-tree.html = 1663933137524
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/serialized-form.html = 1663933137424
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/index.html = 1663933137568
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/member-search-index.js = 1663933137552
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/target/site/apidocs/package-search-index.js = 1663933137548

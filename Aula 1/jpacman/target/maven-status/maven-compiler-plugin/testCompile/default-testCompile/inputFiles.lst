@@ -1,0 +1,13 @@
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/test/java/nl/tudelft/jpacman/board/SquareTest.java
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/test/java/nl/tudelft/jpacman/e2e/framework/startup/StartupSteps.java
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/test/java/nl/tudelft/jpacman/level/LevelTest.java
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/test/java/nl/tudelft/jpacman/board/BoardTest.java
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/test/java/nl/tudelft/jpacman/board/OccupantTest.java
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/test/java/nl/tudelft/jpacman/e2e/framework/startup/StartupTest.java
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/test/java/nl/tudelft/jpacman/board/BasicSquare.java
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/test/java/nl/tudelft/jpacman/board/BasicUnit.java
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/test/java/nl/tudelft/jpacman/integration/StartupSystemTest.java
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 1/jpacman/src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java
