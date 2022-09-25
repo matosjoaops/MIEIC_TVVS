@@ -18,16 +18,16 @@ import nl.tudelft.jpacman.npc.Ghost;
 
     @Override
     public void collide(Unit mover, Unit collidedOn) {
-<span class="nc bnc" id="L21" title="All 2 branches missed.">        if (mover instanceof Player) {</span>
+<span class="pc bpc" id="L21" title="1 of 2 branches missed.">        if (mover instanceof Player) {</span>
 <span class="nc" id="L22">            playerColliding((Player) mover, collidedOn);</span>
         }
-<span class="nc bnc" id="L24" title="All 2 branches missed.">        else if (mover instanceof Ghost) {</span>
-<span class="nc" id="L25">            ghostColliding((Ghost) mover, collidedOn);</span>
+<span class="pc bpc" id="L24" title="1 of 2 branches missed.">        else if (mover instanceof Ghost) {</span>
+<span class="fc" id="L25">            ghostColliding((Ghost) mover, collidedOn);</span>
         }
 <span class="nc bnc" id="L27" title="All 2 branches missed.">        else if (mover instanceof Pellet) {</span>
 <span class="nc" id="L28">            pelletColliding((Pellet) mover, collidedOn);</span>
         }
-<span class="nc" id="L30">    }</span>
+<span class="fc" id="L30">    }</span>
 
     private void playerColliding(Player player, Unit collidedOn) {
 <span class="nc bnc" id="L33" title="All 2 branches missed.">        if (collidedOn instanceof Ghost) {</span>
@@ -39,10 +39,10 @@ import nl.tudelft.jpacman.npc.Ghost;
 <span class="nc" id="L39">    }</span>
 
     private void ghostColliding(Ghost ghost, Unit collidedOn) {
-<span class="nc bnc" id="L42" title="All 2 branches missed.">        if (collidedOn instanceof Player) {</span>
+<span class="pc bpc" id="L42" title="1 of 2 branches missed.">        if (collidedOn instanceof Player) {</span>
 <span class="nc" id="L43">            playerVersusGhost((Player) collidedOn, ghost);</span>
         }
-<span class="nc" id="L45">    }</span>
+<span class="fc" id="L45">    }</span>
 
     private void pelletColliding(Pellet pellet, Unit collidedOn) {
 <span class="nc bnc" id="L48" title="All 2 branches missed.">        if (collidedOn instanceof Player) {</span>

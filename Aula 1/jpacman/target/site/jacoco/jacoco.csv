@@ -28,11 +28,11 @@ jpacman-framework,nl.tudelft.jpacman.level,CollisionInteractionMap.InverseCollis
 jpacman-framework,nl.tudelft.jpacman.level,CollisionInteractionMap,178,0,24,0,46,0,19,0,7,0
 jpacman-framework,nl.tudelft.jpacman.level,MapParser,55,271,6,22,7,62,7,19,1,9
 jpacman-framework,nl.tudelft.jpacman.level,PlayerFactory,0,19,0,0,0,5,0,3,0,3
-jpacman-framework,nl.tudelft.jpacman.level,Level,136,298,28,30,28,77,26,18,3,12
+jpacman-framework,nl.tudelft.jpacman.level,Level,126,308,27,31,26,79,25,19,3,12
 jpacman-framework,nl.tudelft.jpacman.level,Pellet,3,12,0,0,1,5,1,2,1,2
 jpacman-framework,nl.tudelft.jpacman.level,DefaultPlayerInteractionMap,39,0,0,0,12,0,5,0,5,0
 jpacman-framework,nl.tudelft.jpacman.level,Level.NpcMoveTask,0,36,1,1,0,10,1,2,0,2
-jpacman-framework,nl.tudelft.jpacman.level,PlayerCollisions,73,3,14,0,23,1,13,1,6,1
+jpacman-framework,nl.tudelft.jpacman.level,PlayerCollisions,56,20,11,3,17,7,11,3,4,3
 jpacman-framework,nl.tudelft.jpacman.level,Player,25,35,5,1,9,11,5,4,2,4
 jpacman-framework,nl.tudelft.jpacman.level,LevelFactory.RandomGhost,8,0,0,0,3,0,2,0,2,0
 jpacman-framework,nl.tudelft.jpacman.npc.ghost,Inky,21,75,8,8,3,20,7,5,0,4
