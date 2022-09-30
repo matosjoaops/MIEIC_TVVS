@@ -27,6 +27,6 @@ public class StudentTest4 {
     @Test
     public void test1() {
         List<Ghost> emptyGhosts = new ArrayList<>();
-        parser.makeGhostSquare
+        //parser.makeGhostSquare
     }
 }
