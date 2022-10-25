@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE RootStep>
+<RootStep id="_0" name="root"
+          signature="8140692E91F9B2CBE352A9124424B879FC00F461"
+          version="6.0.3">
+  <include>qfs.qft</include>
+  <TestSet id="_1" name="unnamed">
+    <SetupSequence id="_6" name="Launch jpacman-framework-8.1">
+      <SetGlobalStep id="_7" varname="client">
+        <default>jpacman-framework-8.1</default>
+      </SetGlobalStep>
+      <ClientWaiter client="$(client)" id="_8" local="true" raise="false"
+                    resvarname="isSUTRunning" timeout="1">
+        <comment>This node checks whether the SUT is already running. The result of this check will be stored in the variable isSUTRunning. The variable itself can contain true if SUT is already running or false if SUT is not running. This variable will be used in the following 'If' node.</comment>
+      </ClientWaiter>
+      <IfSequence id="_9" name="Launch SUT if not running"
+                  test="not $(isSUTRunning)">
+        <JavaClientStarter client="$(client)" executable="${qftest:java}"
+                           id="_A">
+          <parameter>-jar</parameter>
+          <parameter>/home/mechjm/Faculdade/Repositories/TVVS/Aula 2/lib/jpacman-framework-8.1.1.jar</parameter>
+        </JavaClientStarter>
+        <ClientWaiter client="$(client)" id="_B"/>
+      </IfSequence>
+    </SetupSequence>
+    <TestCase id="_2" name="unnamed">
+      <BasicSequence id="_G" name="start-play-die">
+        <MouseEventStep clicks="1" client="$(client)" component="buttonStart"
+                        event="MOUSE_MPRC" id="_H" modifiers="16"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_I" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_J" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_K" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_L" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_M" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_N" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_O" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_P" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_Q" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_R" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_S" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_T" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_U" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_V" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_W" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_X" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_Y" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_Z" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_a" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_b" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_c" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_d" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_e" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_f" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_g" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_h" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_i" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_j" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_k" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_l" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_m" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_n" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_o" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_p" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_q" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_r" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_s" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_t" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_u" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_v" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_w" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_x" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_y" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_z" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_+" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_-" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_10" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_11" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_12" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_13" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_14" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_15" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_16" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_17" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_18" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_19" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1A" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1B" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1C" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1D" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1E" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1F" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1G" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1H" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1I" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1J" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1K" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1L" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1M" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1N" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1O" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1P" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1Q" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1R" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1S" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1T" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1U" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1V" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1W" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1X" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1Y" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1Z" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1a" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1b" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1c" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1d" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1e" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1f" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1g" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1h" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1i" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1j" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1k" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1l" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1m" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1n" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1o" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1p" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1q" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1r" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1s" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1t" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1u" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1v" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1w" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1x" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1y" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1z" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1+" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_1-" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_20" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_21" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_22" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_23" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_24" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_25" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_26" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_27" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_28" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_29" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2A" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2B" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2C" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2D" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2E" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2F" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2G" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2H" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2I" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2J" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2K" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2L" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2M" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2N" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2O" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2P" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2Q" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2R" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2S" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2T" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2U" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2V" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2W" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2X" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2Y" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2Z" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2a" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2b" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2c" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2d" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2e" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2f" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2g" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2h" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2i" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2j" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2k" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2l" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2m" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2n" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2o" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2p" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2q" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2r" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2s" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2t" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2u" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2v" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2w" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2x" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2y" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2z" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2+" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_2-" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_30" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_31" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_32" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_33" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_34" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_35" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_36" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_37" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_38" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_39" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3A" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3B" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3C" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3D" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3E" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3F" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3G" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3H" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3I" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3J" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3K" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3L" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3M" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3N" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3O" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3P" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3Q" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3R" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3S" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3T" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3U" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3V" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3W" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3X" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3Y" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3Z" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3a" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3b" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3c" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3d" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3e" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3f" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3g" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3h" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3i" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3j" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3k" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3l" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3m" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3n" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3o" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3p" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3q" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3r" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3s" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3t" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3u" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3v" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3w" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3x" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3y" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3z" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3+" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_3-" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_40" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_41" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_42" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_43" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_44" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_45" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_46" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_47" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_48" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_49" keychar="65535" keycode="40"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4A" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4B" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4C" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4D" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4E" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4F" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4G" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4H" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4I" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4J" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4K" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4L" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4M" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4N" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4O" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4P" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4Q" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4R" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4S" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4T" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4U" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4V" keychar="65535" keycode="37"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4W" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4X" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4Y" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4Z" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4a" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4b" keychar="65535" keycode="39"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4c" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4d" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4e" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4f" keychar="65535" keycode="38"
+                      modifiers="0"/>
+        <MouseEventStep clicks="1" client="$(client)"
+                        component="frameJPac-Man.panel" event="MOUSE_MPRC"
+                        id="_4g" modifiers="16" x="942" y="1620"/>
+        <KeyEventStep client="$(client)" component="frameJPac-Man"
+                      event="KEY_PTR" id="_4h" keychar="10" keycode="10"
+                      modifiers="0"/>
+        <MouseEventStep clicks="1" client="$(client)" component="buttonStop"
+                        event="MOUSE_MPRC" id="_4i" modifiers="16"/>
+        <MouseEventStep clicks="1" client="$(client)"
+                        component="frameJPac-Man.panel" event="MOUSE_MPRC"
+                        id="_4j" modifiers="16" x="487" y="897"/>
+        <MouseEventStep clicks="1" client="$(client)" component="buttonStart"
+                        event="MOUSE_MPRC" id="_4k" modifiers="16"/>
+        <MouseEventStep clicks="1" client="$(client)"
+                        component="frameJPac-Man.panel" event="MOUSE_MPRC"
+                        id="_4l" modifiers="16" x="851" y="953"/>
+        <MouseEventStep clicks="1" client="$(client)"
+                        component="frameJPac-Man.panel" event="MOUSE_MPRC"
+                        id="_4m" modifiers="16" x="606" y="352"/>
+      </BasicSequence>
+    </TestCase>
+  </TestSet>
+  <PackageRoot id="_3"/>
+  <ExtraSequence id="_4"/>
+  <WindowList id="_5">
+    <WindowStep class="Window" feature="JPac-Man" height="2130"
+                id="frameJPac-Man" uid="_C" width="1896" x="1928" y="14">
+      <extrafeature name="qfs:class" negate="false" regexp="false" state="0">nl.tudelft.jpacman.ui.PacManUI</extrafeature>
+      <extrafeature name="qfs:genericclass" negate="false" regexp="false"
+                    state="0">Window</extrafeature>
+      <extrafeature name="qfs:label" negate="false" regexp="false" state="1">JPac-Man</extrafeature>
+      <extrafeature name="qfs:systemclass" negate="false" regexp="false"
+                    state="0">javax.swing.JFrame</extrafeature>
+      <ComponentStep class="Button" classcount="2" classindex="0"
+                     feature="Start" height="25" id="buttonStart" uid="_D"
+                     width="70" x="877" y="2100">
+        <extrafeature name="qfs:class" negate="false" regexp="false"
+                      state="0">javax.swing.JButton</extrafeature>
+        <extrafeature name="qfs:genericclass" negate="false" regexp="false"
+                      state="0">Button</extrafeature>
+        <extrafeature name="qfs:label" negate="false" regexp="false"
+                      state="1">Start</extrafeature>
+        <extrafeature name="qfs:systemclass" negate="false" regexp="false"
+                      state="0">javax.swing.JButton</extrafeature>
+      </ComponentStep>
+      <ComponentStep class="Panel" classcount="7" classindex="6" height="1975"
+                     id="frameJPac-Man.panel" uid="_E" width="1896" x="0"
+                     y="120">
+        <extrafeature name="qfs:class" negate="false" regexp="false"
+                      state="0">nl.tudelft.jpacman.ui.BoardPanel</extrafeature>
+        <extrafeature name="qfs:genericclass" negate="false" regexp="false"
+                      state="0">Panel</extrafeature>
+        <extrafeature name="qfs:systemclass" negate="false" regexp="false"
+                      state="0">javax.swing.JPanel</extrafeature>
+      </ComponentStep>
+      <ComponentStep class="Button" classcount="2" classindex="1"
+                     feature="Stop" height="25" id="buttonStop" uid="_F"
+                     width="67" x="952" y="2100">
+        <extrafeature name="qfs:class" negate="false" regexp="false"
+                      state="0">javax.swing.JButton</extrafeature>
+        <extrafeature name="qfs:genericclass" negate="false" regexp="false"
+                      state="0">Button</extrafeature>
+        <extrafeature name="qfs:label" negate="false" regexp="false"
+                      state="1">Stop</extrafeature>
+        <extrafeature name="qfs:systemclass" negate="false" regexp="false"
+                      state="0">javax.swing.JButton</extrafeature>
+      </ComponentStep>
+    </WindowStep>
+  </WindowList>
+</RootStep>
