@@ -14,6 +14,7 @@
 /home/mechjm/Faculdade/Repositories/TVVS/Aula 5/src/test/java/nl/tudelft/jpacman/ExampleTest.java
 /home/mechjm/Faculdade/Repositories/TVVS/Aula 5/src/test/java/nl/tudelft/jpacman/e2e/framework/startup/StartupTest.java
 /home/mechjm/Faculdade/Repositories/TVVS/Aula 5/src/test/java/nl/tudelft/jpacman/level/LevelTest.java
+/home/mechjm/Faculdade/Repositories/TVVS/Aula 5/src/test/java/nl/tudelft/jpacman/level/MapParserTest.java
 /home/mechjm/Faculdade/Repositories/TVVS/Aula 5/src/test/java/nl/tudelft/jpacman/StudentTest3.java
 /home/mechjm/Faculdade/Repositories/TVVS/Aula 5/src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java
 /home/mechjm/Faculdade/Repositories/TVVS/Aula 5/src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java

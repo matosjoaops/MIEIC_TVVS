@@ -19,7 +19,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author Jeroen Roosen 
  */
-class LevelTest {
+public class LevelTest {
 
     /**
      * The level under test.
@@ -75,7 +75,7 @@ class LevelTest {
      * Validates the state of the level when it is stopped without starting.
      */
     @Test
-    void stop() {
+    public void stop() {
         level.stop();
         assertThat(level.isInProgress()).isFalse();
     }

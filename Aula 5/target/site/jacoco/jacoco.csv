@@ -35,7 +35,7 @@ jpacman-framework,nl.tudelft.jpacman.level,Level.NpcMoveTask,0,36,1,1,0,10,1,2,0
 jpacman-framework,nl.tudelft.jpacman.level,PlayerCollisions,56,20,11,3,17,7,11,3,4,3
 jpacman-framework,nl.tudelft.jpacman.level,Player,25,35,5,1,9,11,5,4,2,4
 jpacman-framework,nl.tudelft.jpacman.level,LevelFactory.RandomGhost,8,0,0,0,3,0,2,0,2,0
-jpacman-framework,nl.tudelft.jpacman.npc.ghost,Inky,21,75,8,8,3,20,7,5,0,4
+jpacman-framework,nl.tudelft.jpacman.npc.ghost,Inky,12,84,6,10,2,21,6,6,0,4
 jpacman-framework,nl.tudelft.jpacman.npc.ghost,Pinky,12,43,5,5,2,11,5,3,0,3
 jpacman-framework,nl.tudelft.jpacman.npc.ghost,GhostFactory,0,38,0,0,0,7,0,5,0,5
 jpacman-framework,nl.tudelft.jpacman.npc.ghost,GhostColor,0,44,0,0,0,5,0,1,0,1
