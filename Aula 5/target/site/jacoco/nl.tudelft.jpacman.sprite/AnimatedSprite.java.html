@@ -111,10 +111,10 @@ public class AnimatedSprite implements Sprite {
      * (Re)starts the current animation.
      */
     public void restart() {
-<span class="nc" id="L114">        this.current = 0;</span>
-<span class="nc" id="L115">        this.lastUpdate = System.currentTimeMillis();</span>
-<span class="nc" id="L116">        setAnimating(true);</span>
-<span class="nc" id="L117">    }</span>
+<span class="fc" id="L114">        this.current = 0;</span>
+<span class="fc" id="L115">        this.lastUpdate = System.currentTimeMillis();</span>
+<span class="fc" id="L116">        setAnimating(true);</span>
+<span class="fc" id="L117">    }</span>
 
     @Override
     public void draw(Graphics graphics, int x, int y, int width, int height) {
@@ -150,14 +150,14 @@ public class AnimatedSprite implements Sprite {
 
     @Override
     public int getWidth() {
-<span class="nc bnc" id="L153" title="All 2 branches missed.">        assert currentSprite() != null;</span>
-<span class="nc" id="L154">        return currentSprite().getWidth();</span>
+<span class="pc bpc" id="L153" title="1 of 2 branches missed.">        assert currentSprite() != null;</span>
+<span class="fc" id="L154">        return currentSprite().getWidth();</span>
     }
 
     @Override
     public int getHeight() {
-<span class="nc bnc" id="L159" title="All 2 branches missed.">        assert currentSprite() != null;</span>
-<span class="nc" id="L160">        return currentSprite().getHeight();</span>
+<span class="pc bpc" id="L159" title="1 of 2 branches missed.">        assert currentSprite() != null;</span>
+<span class="fc" id="L160">        return currentSprite().getHeight();</span>
     }
 
 }

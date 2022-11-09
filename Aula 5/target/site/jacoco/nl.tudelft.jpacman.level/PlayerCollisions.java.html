@@ -18,8 +18,8 @@ import nl.tudelft.jpacman.npc.Ghost;
 
     @Override
     public void collide(Unit mover, Unit collidedOn) {
-<span class="pc bpc" id="L21" title="1 of 2 branches missed.">        if (mover instanceof Player) {</span>
-<span class="nc" id="L22">            playerColliding((Player) mover, collidedOn);</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">        if (mover instanceof Player) {</span>
+<span class="fc" id="L22">            playerColliding((Player) mover, collidedOn);</span>
         }
 <span class="pc bpc" id="L24" title="1 of 2 branches missed.">        else if (mover instanceof Ghost) {</span>
 <span class="fc" id="L25">            ghostColliding((Ghost) mover, collidedOn);</span>
@@ -30,13 +30,13 @@ import nl.tudelft.jpacman.npc.Ghost;
 <span class="fc" id="L30">    }</span>
 
     private void playerColliding(Player player, Unit collidedOn) {
-<span class="nc bnc" id="L33" title="All 2 branches missed.">        if (collidedOn instanceof Ghost) {</span>
-<span class="nc" id="L34">            playerVersusGhost(player, (Ghost) collidedOn);</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">        if (collidedOn instanceof Ghost) {</span>
+<span class="fc" id="L34">            playerVersusGhost(player, (Ghost) collidedOn);</span>
         }
-<span class="nc bnc" id="L36" title="All 2 branches missed.">        if (collidedOn instanceof Pellet) {</span>
-<span class="nc" id="L37">            playerVersusPellet(player, (Pellet) collidedOn);</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        if (collidedOn instanceof Pellet) {</span>
+<span class="fc" id="L37">            playerVersusPellet(player, (Pellet) collidedOn);</span>
         }
-<span class="nc" id="L39">    }</span>
+<span class="fc" id="L39">    }</span>
 
     private void ghostColliding(Ghost ghost, Unit collidedOn) {
 <span class="pc bpc" id="L42" title="1 of 2 branches missed.">        if (collidedOn instanceof Player) {</span>
@@ -58,8 +58,8 @@ import nl.tudelft.jpacman.npc.Ghost;
      * @param ghost The ghost involved in the collision.
      */
     public void playerVersusGhost(Player player, Ghost ghost) {
-<span class="nc" id="L61">        player.setAlive(false);</span>
-<span class="nc" id="L62">    }</span>
+<span class="fc" id="L61">        player.setAlive(false);</span>
+<span class="fc" id="L62">    }</span>
 
     /**
      * Actual case of player consuming a pellet.
@@ -68,9 +68,9 @@ import nl.tudelft.jpacman.npc.Ghost;
      * @param pellet The pellet involved in the collision.
      */
     public void playerVersusPellet(Player player, Pellet pellet) {
-<span class="nc" id="L71">        pellet.leaveSquare();</span>
-<span class="nc" id="L72">        player.addPoints(pellet.getValue());</span>
-<span class="nc" id="L73">    }</span>
+<span class="fc" id="L71">        pellet.leaveSquare();</span>
+<span class="fc" id="L72">        player.addPoints(pellet.getValue());</span>
+<span class="fc" id="L73">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

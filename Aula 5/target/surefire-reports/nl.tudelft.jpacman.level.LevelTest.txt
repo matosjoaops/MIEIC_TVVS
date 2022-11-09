@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: nl.tudelft.jpacman.ExampleTest
+Test set: nl.tudelft.jpacman.level.LevelTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in nl.tudelft.jpacman.ExampleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.237 s - in nl.tudelft.jpacman.level.LevelTest

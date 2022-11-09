@@ -37,17 +37,17 @@ public class ImageSprite implements Sprite {
 
     @Override
     public Sprite split(int x, int y, int width, int height) {
-<span class="pc bpc" id="L40" title="2 of 4 branches missed.">        if (withinImage(x, y) &amp;&amp; withinImage(x + width - 1, y + height - 1)) {</span>
+<span class="pc bpc" id="L40" title="1 of 4 branches missed.">        if (withinImage(x, y) &amp;&amp; withinImage(x + width - 1, y + height - 1)) {</span>
 <span class="fc" id="L41">            BufferedImage newImage = newImage(width, height);</span>
 <span class="fc" id="L42">            newImage.createGraphics().drawImage(image, 0, 0, width, height, x,</span>
                 y, x + width, y + height, null);
 <span class="fc" id="L44">            return new ImageSprite(newImage);</span>
         }
-<span class="nc" id="L46">        return new EmptySprite();</span>
+<span class="fc" id="L46">        return new EmptySprite();</span>
     }
 
     private boolean withinImage(int x, int y) {
-<span class="pc bpc" id="L50" title="4 of 8 branches missed.">        return x &lt; image.getWidth(null) &amp;&amp; x &gt;= 0 &amp;&amp; y &lt; image.getHeight(null)</span>
+<span class="pc bpc" id="L50" title="3 of 8 branches missed.">        return x &lt; image.getWidth(null) &amp;&amp; x &gt;= 0 &amp;&amp; y &lt; image.getHeight(null)</span>
             &amp;&amp; y &gt;= 0;
     }
 

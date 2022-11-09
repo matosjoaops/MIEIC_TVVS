@@ -59,8 +59,8 @@ import javax.imageio.ImageIO;
      */
     private Sprite loadSpriteFromResource(String resource) throws IOException {
 <span class="fc" id="L61">        try (InputStream input = SpriteStore.class.getResourceAsStream(resource)) {</span>
-<span class="pc bpc" id="L62" title="1 of 2 branches missed.">            if (input == null) {</span>
-<span class="nc" id="L63">                throw new IOException(&quot;Unable to load &quot; + resource + &quot;, resource does not exist.&quot;);</span>
+<span class="fc bfc" id="L62" title="All 2 branches covered.">            if (input == null) {</span>
+<span class="fc" id="L63">                throw new IOException(&quot;Unable to load &quot; + resource + &quot;, resource does not exist.&quot;);</span>
             }
 <span class="fc" id="L65">            BufferedImage image = ImageIO.read(input);</span>
 <span class="fc" id="L66">            return new ImageSprite(image);</span>

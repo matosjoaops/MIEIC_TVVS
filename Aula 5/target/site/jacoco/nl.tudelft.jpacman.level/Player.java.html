@@ -66,14 +66,14 @@ public class Player extends Unit {
      *            &lt;code&gt;true&lt;/code&gt; iff this player is alive.
      */
     public void setAlive(boolean isAlive) {
-<span class="nc bnc" id="L69" title="All 2 branches missed.">        if (isAlive) {</span>
+<span class="pc bpc" id="L69" title="1 of 2 branches missed.">        if (isAlive) {</span>
 <span class="nc" id="L70">            deathSprite.setAnimating(false);</span>
         }
-<span class="nc bnc" id="L72" title="All 2 branches missed.">        if (!isAlive) {</span>
-<span class="nc" id="L73">            deathSprite.restart();</span>
+<span class="pc bpc" id="L72" title="1 of 2 branches missed.">        if (!isAlive) {</span>
+<span class="fc" id="L73">            deathSprite.restart();</span>
         }
-<span class="nc" id="L75">        this.alive = isAlive;</span>
-<span class="nc" id="L76">    }</span>
+<span class="fc" id="L75">        this.alive = isAlive;</span>
+<span class="fc" id="L76">    }</span>
 
     /**
      * Returns the amount of points accumulated by this player.
@@ -100,7 +100,7 @@ public class Player extends Unit {
      *            has.
      */
     public void addPoints(int points) {
-<span class="nc" id="L103">        score += points;</span>
-<span class="nc" id="L104">    }</span>
+<span class="fc" id="L103">        score += points;</span>
+<span class="fc" id="L104">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

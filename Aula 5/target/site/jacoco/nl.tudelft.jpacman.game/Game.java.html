@@ -51,14 +51,14 @@ public abstract class Game implements LevelObserver {
      * Pauses the game.
      */
     public void stop() {
-<span class="nc" id="L54">        synchronized (progressLock) {</span>
-<span class="nc bnc" id="L55" title="All 2 branches missed.">            if (!isInProgress()) {</span>
-<span class="nc" id="L56">                return;</span>
+<span class="fc" id="L54">        synchronized (progressLock) {</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">            if (!isInProgress()) {</span>
+<span class="fc" id="L56">                return;</span>
             }
-<span class="nc" id="L58">            inProgress = false;</span>
-<span class="nc" id="L59">            getLevel().stop();</span>
-<span class="nc" id="L60">        }</span>
-<span class="nc" id="L61">    }</span>
+<span class="fc" id="L58">            inProgress = false;</span>
+<span class="fc" id="L59">            getLevel().stop();</span>
+<span class="fc" id="L60">        }</span>
+<span class="fc" id="L61">    }</span>
 
     /**
      * @return &lt;code&gt;true&lt;/code&gt; iff the game is started and in progress.
@@ -86,11 +86,11 @@ public abstract class Game implements LevelObserver {
      *            The direction to move in.
      */
     public void move(Player player, Direction direction) {
-<span class="nc bnc" id="L89" title="All 2 branches missed.">        if (isInProgress()) {</span>
+<span class="fc bfc" id="L89" title="All 2 branches covered.">        if (isInProgress()) {</span>
             // execute player move.
-<span class="nc" id="L91">            getLevel().move(player, direction);</span>
+<span class="fc" id="L91">            getLevel().move(player, direction);</span>
         }
-<span class="nc" id="L93">    }</span>
+<span class="fc" id="L93">    }</span>
 
     @Override
     public void levelWon() {
@@ -99,7 +99,7 @@ public abstract class Game implements LevelObserver {
 
     @Override
     public void levelLost() {
-<span class="nc" id="L102">        stop();</span>
-<span class="nc" id="L103">    }</span>
+<span class="fc" id="L102">        stop();</span>
+<span class="fc" id="L103">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

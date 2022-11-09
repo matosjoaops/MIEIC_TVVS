@@ -41,8 +41,8 @@ import nl.tudelft.jpacman.board.Unit;
      */
     public static List&lt;Direction&gt; shortestPath(Square from, Square to,
                                                          Unit traveller) {
-<span class="pc bpc" id="L44" title="1 of 2 branches missed.">        if (from.equals(to)) {</span>
-<span class="nc" id="L45">            return new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        if (from.equals(to)) {</span>
+<span class="fc" id="L45">            return new ArrayList&lt;&gt;();</span>
         }
 
 <span class="fc" id="L48">        List&lt;Node&gt; targets = new ArrayList&lt;&gt;();</span>
@@ -90,7 +90,7 @@ import nl.tudelft.jpacman.board.Unit;
 
 <span class="fc" id="L91">        toDo.add(currentLocation);</span>
 
-<span class="pc bpc" id="L93" title="1 of 2 branches missed.">        while (!toDo.isEmpty()) {</span>
+<span class="fc bfc" id="L93" title="All 2 branches covered.">        while (!toDo.isEmpty()) {</span>
 <span class="fc" id="L94">            Square square = toDo.remove(0);</span>
 <span class="fc" id="L95">            Unit unit = findUnit(type, square);</span>
 <span class="fc bfc" id="L96" title="All 2 branches covered.">            if (unit != null) {</span>
@@ -105,7 +105,7 @@ import nl.tudelft.jpacman.board.Unit;
                 }
             }
 <span class="fc" id="L107">        }</span>
-<span class="nc" id="L108">        return null;</span>
+<span class="fc" id="L108">        return null;</span>
     }
 
     /**

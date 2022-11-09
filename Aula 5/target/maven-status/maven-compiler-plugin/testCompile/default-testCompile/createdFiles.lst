@@ -15,7 +15,6 @@ nl/tudelft/jpacman/board/BasicSquare.class
 nl/tudelft/jpacman/board/BoardTest.class
 nl/tudelft/jpacman/e2e/framework/startup/StartupTest.class
 nl/tudelft/jpacman/StudentTest4.class
-nl/tudelft/jpacman/level/MapParserTest.class
 nl/tudelft/jpacman/LauncherSmokeTest.class
 nl/tudelft/jpacman/StudentTest1$1.class
 nl/tudelft/jpacman/board/OccupantTest.class

@@ -70,8 +70,8 @@ public class ScorePanel extends JPanel {
 <span class="fc bfc" id="L70" title="All 2 branches covered.">        for (Map.Entry&lt;Player, JLabel&gt; entry : scoreLabels.entrySet()) {</span>
 <span class="fc" id="L71">            Player player = entry.getKey();</span>
 <span class="fc" id="L72">            String score = &quot;&quot;;</span>
-<span class="pc bpc" id="L73" title="1 of 2 branches missed.">            if (!player.isAlive()) {</span>
-<span class="nc" id="L74">                score = &quot;You died. &quot;;</span>
+<span class="fc bfc" id="L73" title="All 2 branches covered.">            if (!player.isAlive()) {</span>
+<span class="fc" id="L74">                score = &quot;You died. &quot;;</span>
             }
 <span class="fc" id="L76">            score += scoreFormatter.format(player);</span>
 <span class="fc" id="L77">            entry.getValue().setText(score);</span>
